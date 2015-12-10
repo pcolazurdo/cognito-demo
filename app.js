@@ -10,6 +10,8 @@ var users = require('./routes/users');
 
 var app = express();
 
+var cognito = require('./lib/cognito');
+
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');
@@ -55,6 +57,8 @@ app.use(function(err, req, res, next) {
     error: {}
   });
 });
+
+cognito.initialize();
 
 
 module.exports = app;
