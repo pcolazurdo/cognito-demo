@@ -49,6 +49,7 @@ module.exports = function(passport){
 		res.redirect('/');
 	});
 
+/*
 	// route for facebook authentication and login
 	// different scopes while logging in
 	router.get('/login/facebook',
@@ -62,6 +63,7 @@ module.exports = function(passport){
 			failureRedirect : '/'
 		})
 	);
+*/
 
 	// route for twitter authentication and login
 	// different scopes while logging in
