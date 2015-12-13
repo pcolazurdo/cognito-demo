@@ -1,9 +1,9 @@
-var facebook = require('./facebook');
-var twitter = require('./twitter');
-var User = require('../models/user');
+//var facebook = require('./facebook');
+var twitter = require('../passport/twitter');
+// var User = require('../models/user');
 
 module.exports = function(passport){
-
+/*
 	// Passport needs to be able to serialize and deserialize users to support persistent login sessions
     passport.serializeUser(function(user, done) {
         console.log('serializing user: ');console.log(user);
@@ -16,9 +16,9 @@ module.exports = function(passport){
             done(err, user);
         });
     });
-
+*/
     // Setting up Passport Strategies for Facebook and Twitter
-    facebook(passport);
+    //facebook(passport);
     twitter(passport);
 
 }

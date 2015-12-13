@@ -8,6 +8,9 @@ var app = require('../app');
 var debug = require('debug')('cognito-demo:server');
 var http = require('http');
 
+
+var util = require('util');
+
 /**
  * Get port from environment and store in Express.
  */
@@ -20,6 +23,8 @@ app.set('port', port);
  */
 
 var server = http.createServer(app);
+
+console.log(util.inspect(server));
 
 /**
  * Listen on provided port, on all network interfaces.
