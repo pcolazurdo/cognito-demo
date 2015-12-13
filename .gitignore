@@ -29,5 +29,5 @@ node_modules
 
 # Security!!!!!
 credentials.js
-twitter.js
+/twitter.js
 credentials.json
