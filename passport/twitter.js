@@ -3,12 +3,11 @@ var TwitterStrategy  = require('passport-twitter').Strategy;
 var twitterConfig = require('../twitter.js');
 
 module.exports = function(passport) {
-
+    console.log("twitter - passport");
     passport.use('twitter', new TwitterStrategy({
         consumerKey     : twitterConfig.apikey,
         consumerSecret  : twitterConfig.apisecret,
         callbackURL     : twitterConfig.callbackURL
-
     },
     function(token, tokenSecret, profile, done) {
 

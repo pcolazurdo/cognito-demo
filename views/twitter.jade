@@ -5,11 +5,11 @@ block content
 		div.row
 			div.col-sm-6.col-md-4.col-md-offset-4
 				#user
-					h1.text-center.login-title Welcome #{user.firstName}. Check your details below:
+					h1.text-center.login-title Welcome to the twitter page! #{user.firstName}. Check your details below:
 						div.signup-wall
 							ul.user-details
 								li Id    ---> #{user.twitter.id}
-								li User name ---> #{user.twitter.username} 
+								li User name ---> #{user.twitter.username}
 								li Display Name ---> #{user.twitter.displayName}
 								li Last Status ---> #{user.twitter.lastStatus}
 						a(href='/signout', class='text-center new-account') Sign Out
