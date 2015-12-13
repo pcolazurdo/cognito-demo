@@ -14,6 +14,8 @@ module.exports = function(passport) {
 
       // make the code asynchronous
       // User.findOne won't fire until we have all our data back from Twitter
+      console.log("Here we are");
+
     	process.nextTick(function() {
         cognito.login(token, tokenSecret);
         /*
