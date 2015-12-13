@@ -1,6 +1,7 @@
 var TwitterStrategy  = require('passport-twitter').Strategy;
 //var User = require('../models/user');
 var twitterConfig = require('../twitter.js');
+var cognito = require('../lib/cognito');
 
 module.exports = function(passport) {
     console.log("twitter - passport");
